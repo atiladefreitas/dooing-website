@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Button } from "@material-tailwind/react";
 import { ArrowDown, Github } from "lucide-react";
-import RepoStats from "@/components/RepoStats";
-import CodeRender from "@/components/CodeRender";
-import DefaultConfig from "@/components/DefaultConfig";
+import RepoStats from "../components/RepoStats";
+import CodeRender from "../components/CodeRender";
+import DefaultConfig from "../components/DefaultConfig";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,7 +22,7 @@ const slideIn = {
 export default function Home() {
   return (
     <>
-      <div className="h-screen w-screen dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center px-4">
+      <div className="pt-12 md:h-screen w-screen dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center px-4">
         <motion.div
           {...fadeIn}
           className="absolute flex flex-col left-1/2 bottom-0 transform -translate-x-1/2 mb-6 items-center justify-center"
